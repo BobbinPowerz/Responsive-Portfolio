@@ -35,10 +35,22 @@ body {
 
 #logo {
 	background-color: #4aaaa5;
-  display:inline-block;
-  padding: 20px 10px; 
-  margin:0;
-  float: left; 
+	display:inline-block;
+	padding: 20px 10px; 
+	margin:0;
+	float: left;
+	animation-name: logo;
+	animation-duration: 4s; 
+}
+
+@keyframes logo {
+    from {background-color: #4aaaa5;}
+    to {background-color:#DCD688;}
+}
+
+@keyframes titles {
+    from {color: #4aaaa5;}
+    to {color:#DCD688;}
 }
 
 a#logo {
@@ -100,6 +112,8 @@ a {
 	border-bottom: 3px solid #dddddd;
 	padding: 20px;
 	text-align: left;
+	animation-name: titles;
+	animation-duration: 4s;
 }
 
 .sec #mug {
@@ -135,55 +149,35 @@ p {
 	color: #4aaaa5;
 	border-bottom: 2px solid #cccccc;
 	padding: 20px;
-}
-
-footer {
-	font: 12px aerial, sans-serif;
-	background-color: #666666;
-	color: #ffffff;
-	border-top: 5px solid #4aaaa5;
-	margin:0;
-	padding: 30px 0;
+	animation-name: titles;
+	animation-duration: 4s;
 }
 
 #hangman {
-	display: inline-block;
-	margin: 30px 20px 10px 20px;
-	width: 280px;
-	height: 180px;
 	background-image: url("../images/ipad.jpg");
 }
 
 #rpg {
-	display: inline-block;
-	margin:30px 20px 10px 20px;
-	width: 280px;
-	height: 180px;
 	background-image: url("../images/turntable.jpg");
 }
 
 #trivia {
-	display: inline-block;
-	margin:20px;
-	width: 280px;
-	height: 180px;
 	background-image: url("../images/headphones.jpg");
 }
 
 #widget {
-	display: inline-block;
-	margin:20px;
-	width: 280px;
-	height: 180px;
 	background-image: url("../images/mp3.jpg");
 }
 
 #pgs {
+	background-image: url("../images/tv.jpg");
+}
+
+#pgs, #trivia, #rpg, #widget, #hangman {
 	display: inline-block;
-	margin:10px 20px 30px 20px;
+	margin:20px;
 	width: 280px;
 	height: 180px;
-	background-image: url("../images/tv.jpg");
 }
 
 h3 {
@@ -239,6 +233,14 @@ textarea {
 	height: 200px;
 	font: 16px aerial, sans-serif;
 	text-align: left;
+}
+footer {
+	font: 12px aerial, sans-serif;
+	background-color: #666666;
+	color: #ffffff;
+	border-top: 5px solid #4aaaa5;
+	margin:0;
+	padding: 30px 0;
 }
 
 @media screen and (max-width: 980px) {
@@ -338,7 +340,32 @@ ul {
 }
 
 @media screen and (max-width: 640px) {
+	
+ #header {
+	background-color: #ffffff;
+	margin-top: 0;
+	border-bottom: 3px solid #cccccc;
+} 
 
+ul {
+  list-style-type: none;
+  width:100%;
+  margin:0 20%; 
+}
+
+li {
+	padding: 10px 5px;  
+	font-family: "Times New Roman", Georgia, Times, Serif;  
+	width: 20%;
+	margin-top: 10px; 
+} 
+
+#logo {
+	background-color: #4aaaa5;
+	display:block;
+	padding: 20px;
+	width:100%
+}
 .sec {
 	background-color: #ffffff;
 	width: 95%;
@@ -373,32 +400,6 @@ h3 {
 	overflow: hidden;
 	padding: 0;
 	margin: 30px 20px;
-}
-
- #header {
-	background-color: #ffffff;
-	margin-top: 0;
-	border-bottom: 3px solid #cccccc;
-} 
-
-  ul {
-  list-style-type: none;
-  width:100%;
-  margin:0 20%; 
-}
-
-li {
-	padding: 10px 5px;  
-	font-family: "Times New Roman", Georgia, Times, Serif;  
-	width: 20%;
-	margin-top: 10px; 
-} 
-
-#logo {
-	background-color: #4aaaa5;
-	display:block;
-	padding: 20px;
-	width:100%
 }
 
 }
